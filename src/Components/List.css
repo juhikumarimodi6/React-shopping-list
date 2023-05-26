@@ -1,0 +1,6 @@
+.list-container {
+    display: flex;
+    width:80%;
+    background-color: rgb(172, 160, 211);
+    color:black;
+}

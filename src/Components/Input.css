@@ -1,0 +1,18 @@
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+.input-box {
+    border:none;
+    margin:0px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.add-button {
+    border:none;
+    margin:0px;
+    color: black;
+    font-weight: bold;
+}
