@@ -13,3 +13,15 @@
   display: flex;
   flex-direction: column;
 }
+
+@media only screen and (max-width:800px) {
+  .app-container {
+    width:80vw;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .app-container {
+    width:95vw;
+  }
+}
