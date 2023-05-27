@@ -1,43 +1,19 @@
 import React from "react";
 import './Input.css'
 
-const Input = ({input, lists, doneCheck, count, setInput, setLists, setDoneCheck, setCount}) => {
+const Input = ({input, setInput, UpdateList}) => {
 
     const handleInput = (event) => {
         setInput(event.target.value)
     }
       
     const handleEnter = (event) => {
-        if(input.length > 0 && event.key === 'Enter') {
-            setLists(prevlist => [...prevlist, input]);
-            setInput("")
-            setDoneCheck(prevDone => {
-                console.log("in handle enter ")
-                return [...prevDone, false]
-            })
-            
-            setCount(prevCount => {
-                console.log("inside input" + prevCount)
-                return [...prevCount, 0]
-            })
-        }
-    }
-    
-    const handleAdd = () => {
-        if(input.length > 0){
-            setLists(prevlist => [...prevlist, input]);
-            setInput("")
-            setDoneCheck(prevDone => {
-                return [...prevDone, false]
-            })
-            setCount(prevCount => {
-                return [...prevCount, 0]
-            })
+        if(event.key === 'Enter') {
+            UpdateList()
         }
     }
     
     return(
-        <div className="input-container">
             <input
                 type="text"
                 placeholder='List here...'
@@ -46,8 +22,6 @@ const Input = ({input, lists, doneCheck, count, setInput, setLists, setDoneCheck
                 value={input}
                 className='input-box'
             />
-            <button onClick={handleAdd} className='add-button'>+</button>
-        </div>
     )
 }
 

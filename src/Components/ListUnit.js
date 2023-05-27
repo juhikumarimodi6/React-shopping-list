@@ -1,8 +1,8 @@
 import React from "react";
 import Done from "./Done";
 import Counter from "./Counter";
-import './ListUnit.css'
 import List from "./List";
+import './ListUnit.css'
 
 const ListUnit = ({index, count, setCount, doneCheck, setDoneCheck, list}) => {
     return (

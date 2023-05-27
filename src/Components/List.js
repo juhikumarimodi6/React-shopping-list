@@ -3,10 +3,9 @@ import './List.css'
 
 const List = ({index, doneCheck, list}) => {
 
-    // console.log("doneCheck" + doneCheck[index])
     return (
         <div className={doneCheck[index] ? "list-item" : ""}>
-            {list}
+            <b>{list.toUpperCase()}</b>
         </div>
     )
 }

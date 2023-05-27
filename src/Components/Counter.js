@@ -36,7 +36,6 @@ const Counter = ({index, count, setCount}) => {
                 onClick={() => handleIncrement(index)}
             />
         </div>
-
     )
 }
 

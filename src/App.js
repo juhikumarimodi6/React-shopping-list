@@ -1,7 +1,7 @@
 import React from 'react';
-import Input from './Components/Input';
 import Header from './Components/Header';
 import ListUnit from './Components/ListUnit';
+import InputAddUnit from './Components/InputAddUnit';
 import './App.css';
 
 function App() {
@@ -11,23 +11,16 @@ function App() {
   const [count, setCount] = React.useState([]);
   const [doneCheck, setDoneCheck] = React.useState([]);
 
-  console.log("in app count " + count)
-  console.log("in app doneCheck " + doneCheck)
-
   return (
     <div className='app-container'>
       <Header />
-      <Input
+      <InputAddUnit
         input = {input}
         setInput = {setInput}
-        lists = {lists}
         setLists = {setLists}
-        count = {count}
         setCount={setCount}
-        doneCheck={doneCheck}
         setDoneCheck={setDoneCheck}
       />
-
       {lists.map((list , index) => {
           return <ListUnit 
                     key = {index}
@@ -38,7 +31,7 @@ function App() {
                     setDoneCheck = {setDoneCheck}
                     list = {list}
                   />
-      })}
+      })} 
     </div>
 
   );
