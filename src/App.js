@@ -1,13 +1,18 @@
 import React from 'react';
 import Input from './Components/Input';
 import Header from './Components/Header';
-import List from './Components/List';
+import ListUnit from './Components/ListUnit';
 import './App.css';
 
 function App() {
 
   const [input, setInput] = React.useState("");
-  const [list, setList] = React.useState([]);
+  const [lists, setLists] = React.useState([]);
+  const [count, setCount] = React.useState([]);
+  const [doneCheck, setDoneCheck] = React.useState([]);
+
+  console.log("in app count " + count)
+  console.log("in app doneCheck " + doneCheck)
 
   return (
     <div className='app-container'>
@@ -15,10 +20,25 @@ function App() {
       <Input
         input = {input}
         setInput = {setInput}
-        list = {list}
-        setList = {setList}
+        lists = {lists}
+        setLists = {setLists}
+        count = {count}
+        setCount={setCount}
+        doneCheck={doneCheck}
+        setDoneCheck={setDoneCheck}
       />
-      {/* <List /> */}
+
+      {lists.map((list , index) => {
+          return <ListUnit 
+                    key = {index}
+                    index = {index}
+                    count = {count}
+                    setCount={setCount}
+                    doneCheck = {doneCheck}
+                    setDoneCheck = {setDoneCheck}
+                    list = {list}
+                  />
+      })}
     </div>
 
   );

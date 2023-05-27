@@ -1,15 +1,12 @@
 import React from "react";
-import {MdDone} from "react-icons/md"
 import './List.css'
 
-const List = () => {
+const List = ({index, doneCheck, list}) => {
+
+    // console.log("doneCheck" + doneCheck[index])
     return (
-        <div className="list-container">
-            <MdDone 
-                className="done"
-            />
-            <div>List1</div>
-            
+        <div className={doneCheck[index] ? "list-item" : ""}>
+            {list}
         </div>
     )
 }

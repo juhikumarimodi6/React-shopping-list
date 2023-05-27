@@ -1,0 +1,18 @@
+.counter-container {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left, .right , .count {
+    color:brown;
+    /* border:solid; */
+    display: flex;
+    align-items: center;
+}
+
+.count {
+    margin-top:0px;
+}

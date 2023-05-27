@@ -1,6 +1,7 @@
 .input-container {
     display: flex;
     justify-content: center;
+    margin:10%;
 }
 
 .input-box {
@@ -8,6 +9,7 @@
     margin:0px;
     font-weight: bold;
     font-size: large;
+    width:70%
 }
 
 .add-button {
@@ -15,4 +17,5 @@
     margin:0px;
     color: black;
     font-weight: bold;
+    padding:2%;
 }

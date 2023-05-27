@@ -1,0 +1,11 @@
+.done {
+    color:white;
+    border-radius: 50%;
+    background-color: white;
+    margin:1%;
+    padding:0.5%;
+}
+
+.doneCheck {
+    color:green;
+}
