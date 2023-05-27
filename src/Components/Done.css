@@ -4,6 +4,11 @@
     background-color: white;
     margin:1%;
     padding:0.5%;
+    border:solid black;
+    width:height;
+    font-weight: bold;
+    /* width:10px;
+    height: 10px; */
 }
 
 .doneCheck {

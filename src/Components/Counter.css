@@ -4,15 +4,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width:8vw;
+    height: 1.5rem;
 }
 
 .left, .right , .count {
     color:brown;
     /* border:solid; */
+    border:none;
     display: flex;
     align-items: center;
+    margin:2%;
+    padding:2%;
+    background-color: white;
+    font-size: large;
+    font-weight: bold;
+    height:80%;
+    /* justify-content: center; */
 }
 
 .count {
     margin-top:0px;
+    background-color: rgb(169, 59, 59);
+    color:white;
+    padding: 0 20%;
+    height:80%;
 }

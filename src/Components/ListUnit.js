@@ -2,11 +2,13 @@ import React from "react";
 import Done from "./Done";
 import Counter from "./Counter";
 import List from "./List";
+import Cross from "./Cross";
 import './ListUnit.css'
 
-const ListUnit = ({index, count, setCount, doneCheck, setDoneCheck, list}) => {
+
+const ListUnit = ({index, count, setCount, doneCheck, setDoneCheck, list, setLists}) => {
     return (
-        <div className="list-container">
+        <div className="list-unit">
             <div className="list-done">
                 <Done 
                     index={index}
@@ -19,11 +21,19 @@ const ListUnit = ({index, count, setCount, doneCheck, setDoneCheck, list}) => {
                     list={list}
                 />
             </div>
-            <Counter 
-                index = {index}
-                count = {count}
-                setCount={setCount}
-            />
+            <div className="counter-crossunit">
+                <Counter 
+                    index = {index}
+                    count = {count}
+                    setCount={setCount}
+                />
+                <Cross
+                    index = {index} 
+                    setLists = {setLists}
+                    setDoneCheck = {setDoneCheck}
+                    setCount={setCount}
+                />
+            </div>
         </div>
     )
 }

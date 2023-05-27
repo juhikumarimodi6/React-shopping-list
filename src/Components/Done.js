@@ -4,15 +4,12 @@ import './Done.css'
 
 const Done = ({index, doneCheck, setDoneCheck}) => {
 
-    const handleMarkDone = (id, event) => {
+    const handleMarkDone = (id) => {
         setDoneCheck((prevDoneCheck) => {
           prevDoneCheck[id]=!prevDoneCheck[id];
           return [...prevDoneCheck];
         } )
     }
-
-    // console.log("in Done count " + count)
-    console.log("in Done doneCheck " + doneCheck)
 
     return (
         <MdDone 

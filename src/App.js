@@ -21,6 +21,7 @@ function App() {
         setCount={setCount}
         setDoneCheck={setDoneCheck}
       />
+      <div className='list-container'> 
       {lists.map((list , index) => {
           return <ListUnit 
                     key = {index}
@@ -30,8 +31,10 @@ function App() {
                     doneCheck = {doneCheck}
                     setDoneCheck = {setDoneCheck}
                     list = {list}
+                    setLists = {setLists}
                   />
       })} 
+      </div>
     </div>
 
   );

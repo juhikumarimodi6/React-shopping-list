@@ -1,9 +1,3 @@
-.input-container {
-    display: flex;
-    justify-content: center;
-    margin:10%;
-}
-
 .input-box {
     border:none;
     margin:0px;

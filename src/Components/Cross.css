@@ -1,0 +1,11 @@
+.cross {
+    border-radius: 50%;
+    border: solid;
+    padding:5%;
+    margin-left: 5px;
+    width:1vw;
+    margin-right: 2px;
+    background-color: black;
+    color:white;
+    height: 0.5rem;
+}

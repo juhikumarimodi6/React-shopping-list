@@ -1,5 +1,4 @@
 import React from "react";
-import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import './Counter.css'
 
 const Counter = ({index, count, setCount}) => {
@@ -12,29 +11,25 @@ const Counter = ({index, count, setCount}) => {
     }
 
     const handleIncrement = (id) => {
-        console.log("inside handle increment" + count)
         setCount(prevCount => {
-            console.log('prevcount[id] before' +prevCount[id])
             prevCount[id] = prevCount[id] + 1;
-            console.log('prevcount[id] after ' +prevCount[id])
             return [...prevCount]
         })
     }
 
-    console.log("in Counter.js count " + count)
-    // console.log("in Counter.js doneCheck " + doneCheck)
-
     return (
         <div className="counter-container">
-            <BiChevronLeft 
+            <button 
                 className="left"
                 onClick={() => handleDecrement(index)}
-            />
+            > - </button>
+
             <div className="count">{count[index]}</div>
-            <BiChevronRight 
+
+            <button 
                 className="right"
                 onClick={() => handleIncrement(index)}
-            />
+            > + </button>
         </div>
     )
 }
