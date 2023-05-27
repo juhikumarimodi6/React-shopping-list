@@ -4,10 +4,7 @@
     width:70%;
     background-color: rgb(172, 160, 211);
     color:black;
-    /* justify-content: space-between; */
-    /* align-items: center; */
     margin: 2% auto;
-    /* height: 2rem; */
     border-radius: 5%;
     border:solid;
 }
@@ -20,8 +17,6 @@
 .list-done {
     display: flex;
     margin:1%;
-    /* align-items: center; */
-
 }
 
 .counter-crossunit {

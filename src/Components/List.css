@@ -7,3 +7,10 @@
     text-decoration-color: red;
     text-decoration-thickness: 3px;
 }
+
+@media only screen and (max-width:400px) {
+    .list {
+        width:50vw;
+    }
+    
+}

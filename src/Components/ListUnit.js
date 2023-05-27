@@ -38,12 +38,6 @@ const ListUnit = ({index, count, setCount, doneCheck, setDoneCheck, list, setLis
                     count = {count}
                     setCount={setCount}
                 />
-                {/* <Cross
-                    index = {index} 
-                    setLists = {setLists}
-                    setDoneCheck = {setDoneCheck}
-                    setCount={setCount}
-                /> */}
             </div>
         </div>
     )
