@@ -1,8 +1,9 @@
 .list {
-    width:10vw;
+    width:15vw;
 }
 
 .list-item {
     text-decoration:line-through;
     text-decoration-color: red;
+    text-decoration-thickness: 3px;
 }

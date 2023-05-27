@@ -1,24 +1,32 @@
 .list-unit {
     display: flex;
-    width:80%;
+    flex-direction: column;
+    width:70%;
     background-color: rgb(172, 160, 211);
     color:black;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     margin: 2% auto;
     /* height: 2rem; */
     border-radius: 5%;
     border:solid;
 }
 
+.list-done-cross {
+    display: flex;
+    justify-content: space-between;
+}
+
 .list-done {
     display: flex;
     margin:1%;
-    align-items: center;
+    /* align-items: center; */
+
 }
 
 .counter-crossunit {
     display: flex;
     margin:2%;
+    margin-left: 10%;
     align-items: center;
 }
