@@ -14,7 +14,7 @@ const InputAddUnit = () => {
               })
             setDoneCheck(prevDoneCheck => [...prevDoneCheck, false])    //Default DoneCheck is false
             setInput("")
-            setCount(prevCount => [...prevCount, 0])
+            setCount(prevCount => [...prevCount, 1])
         }
     }
     
