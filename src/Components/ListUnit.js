@@ -6,28 +6,22 @@ import Cross from "./Cross";
 import './ListUnit.css'
 
 
-const ListUnit = ({index, count, setCount, doneCheck, setDoneCheck, list, setLists}) => {
+const ListUnit = ({index, list}) => {
     return (
         <div className="list-unit">
             <div className="list-done-cross">
                 <div className="list-done">
                     <Done 
                         index={index}
-                        doneCheck={doneCheck}
-                        setDoneCheck={setDoneCheck}
                     />
                     <List 
                         index={index}
-                        doneCheck={doneCheck}
                         list={list}
                     />
                 </div>
                 <div>
                     <Cross
                         index = {index} 
-                        setLists = {setLists}
-                        setDoneCheck = {setDoneCheck}
-                        setCount={setCount}
                     />
                 </div>
             </div>
@@ -35,8 +29,6 @@ const ListUnit = ({index, count, setCount, doneCheck, setDoneCheck, list, setLis
                 <b>Qty:</b>
                 <Counter 
                     index = {index}
-                    count = {count}
-                    setCount={setCount}
                 />
             </div>
         </div>

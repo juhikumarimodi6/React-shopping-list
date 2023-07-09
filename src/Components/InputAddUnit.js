@@ -1,9 +1,11 @@
 import React from "react";
 import Input from "./Input";
 import AddButton from "./AddButton";
+import { useGlobalStateContext } from "../Context/StateProvider";
 import './InputAddUnit.css'
 
-const InputAddUnit = ({input, setInput, setLists, setDoneCheck, setCount}) => {
+const InputAddUnit = () => {
+    const {input, setInput, setLists, setDoneCheck, setCount} = useGlobalStateContext();
 
     const UpdateList = () => {
         if(input !== "") {
@@ -19,8 +21,6 @@ const InputAddUnit = ({input, setInput, setLists, setDoneCheck, setCount}) => {
     return(
         <div className="input-container">
             <Input
-                input = {input} 
-                setInput = {setInput} 
                 UpdateList = {UpdateList}
             />
             <AddButton 

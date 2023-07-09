@@ -2,7 +2,6 @@ import React from "react";
 import './AddButton.css'
 
 const AddButton = ({UpdateList}) => {
-
     const handleAdd = () => {
         UpdateList()
     }

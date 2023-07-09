@@ -2,36 +2,21 @@ import React from 'react';
 import Header from './Components/Header';
 import ListUnit from './Components/ListUnit';
 import InputAddUnit from './Components/InputAddUnit';
+import { useGlobalStateContext } from './Context/StateProvider';
 import './App.css';
 
 function App() {
-
-  const [input, setInput] = React.useState("");
-  const [lists, setLists] = React.useState([]);
-  const [count, setCount] = React.useState([]);
-  const [doneCheck, setDoneCheck] = React.useState([]);
-
+  const {lists} = useGlobalStateContext();
   return (
     <div className='app-container'>
       <Header />
-      <InputAddUnit
-        input = {input}
-        setInput = {setInput}
-        setLists = {setLists}
-        setCount={setCount}
-        setDoneCheck={setDoneCheck}
-      />
+      <InputAddUnit />
       <div className='list-container'> 
       {lists.map((list , index) => {
           return <ListUnit 
                     key = {index}
                     index = {index}
-                    count = {count}
-                    setCount={setCount}
-                    doneCheck = {doneCheck}
-                    setDoneCheck = {setDoneCheck}
                     list = {list}
-                    setLists = {setLists}
                   />
       })} 
       </div>

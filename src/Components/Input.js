@@ -1,8 +1,9 @@
 import React from "react";
+import { useGlobalStateContext } from "../Context/StateProvider";
 import './Input.css'
 
-const Input = ({input, setInput, UpdateList}) => {
-
+const Input = ({UpdateList}) => {
+    const {input, setInput} = useGlobalStateContext();
     const handleInput = (event) => {
         setInput(event.target.value)
     }
@@ -16,7 +17,7 @@ const Input = ({input, setInput, UpdateList}) => {
     return(
             <input
                 type="text"
-                placeholder='List here...'
+                placeholder='Add an item...'
                 onChange={handleInput}
                 onKeyDown={handleEnter}
                 value={input}

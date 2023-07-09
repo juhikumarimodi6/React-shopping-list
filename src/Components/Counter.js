@@ -1,8 +1,9 @@
 import React from "react";
+import { useGlobalStateContext } from "../Context/StateProvider";
 import './Counter.css'
 
-const Counter = ({index, count, setCount}) => {
-
+const Counter = ({index}) => {
+    const {count, setCount} = useGlobalStateContext();
     const handleDecrement = (id) => {
         setCount(prevCount => {
             prevCount[id] = prevCount[id] === 0 ?  0 : prevCount[id] - 1;

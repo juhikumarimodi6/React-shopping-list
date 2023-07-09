@@ -1,9 +1,10 @@
 import React from "react";
 import {MdDone} from "react-icons/md"
+import { useGlobalStateContext } from "../Context/StateProvider";
 import './Done.css'
 
-const Done = ({index, doneCheck, setDoneCheck}) => {
-
+const Done = ({index}) => {
+    const {doneCheck, setDoneCheck} = useGlobalStateContext();
     const handleMarkDone = (id) => {
         setDoneCheck((prevDoneCheck) => {
           prevDoneCheck[id]=!prevDoneCheck[id];
