@@ -33,7 +33,7 @@ The app will open in your default web browser at http://localhost:3000.
 
 ## Demo
 
-Check out the [Demo Video]() to see the Shopping List App in action.
+Check out the [Demo Video](ShoppingList-Video.webm) to see the Shopping List App in action.
 
 
 ## Dependencies
