@@ -3,6 +3,7 @@ import Header from './Components/Header';
 import ListUnit from './Components/ListUnit';
 import InputAddUnit from './Components/InputAddUnit';
 import { useGlobalStateContext } from './Context/StateProvider';
+import ClearAll from './Components/ClearAll';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                   />
       })} 
       </div>
+      <ClearAll />
     </div>
 
   );

@@ -19,7 +19,7 @@ const InputAddUnit = () => {
     }
     
     return(
-        <div className="input-container">
+        <div className='input-container'>
             <Input
                 UpdateList = {UpdateList}
             />
