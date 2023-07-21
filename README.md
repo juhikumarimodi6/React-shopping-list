@@ -46,6 +46,6 @@ The app is built using the following dependencies:
 ## Contributing
 Contributions to this project are welcome! If you find a bug or want to add new features, feel free to submit a pull request.
 ## Contact
-If you have any questions or feedback, you can reach me at [your-email@example.com](mailto:juhikumarimodi6@gmail.com).
+If you have any questions or feedback, you can reach me at [juhikumarimodi6@gmail.com](mailto:juhikumarimodi6@gmail.com).
 
 ---
